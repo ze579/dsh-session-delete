@@ -22,7 +22,7 @@
   },
   "plugins": [
     {
-      "name": "@local/dsh-session-delete",
+      "name": "dsh-session-delete",
       "title": {
         "zh": "会话删除",
         "en": "Session delete"
@@ -53,12 +53,12 @@
       },
       "versions": [
         {
-          "version": "0.1.7",
-          "publishTimestamp": 1794819886,
+          "version": "0.1.8",
+          "publishTimestamp": 1794820257,
           "source": {
             "type": "git",
             "url": "https://github.com/ze579/dsh-session-delete",
-            "commit": "6879aec2d47d6c9a6ec74c7d261c022c11195ab0"
+            "commit": "759fc40063b00276210d41127730ba3b8e0853c1"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.3 <0.3.0"
