@@ -1,0 +1,52 @@
+{
+  "name": "@local/dsh-session-delete",
+  "version": "0.1.7",
+  "private": true,
+  "type": "module",
+  "description": "Right-click a session to delete it, with two confirmations. 右键删除会话，两次确认；删除文件、账本与缓存。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-context-menu",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "delete",
+    "context-menu",
+    "会话",
+    "删除"
+  ],
+  "license": "MIT",
+  "author": "dsh-session-delete contributors",
+  "engines": {
+    "node": ">=18"
+  }
+}

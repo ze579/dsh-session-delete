@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Session delete",
+    "description": "Delete a session from its right-click menu, with two confirmations before anything is removed. (DSH 0.2.2-rc.3+)",
+    "detail": "docs/DETAIL.md"
+  }
+}

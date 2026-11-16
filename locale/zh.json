@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "会话删除",
+    "description": "在会话右键菜单里删除会话，删除前需要两次确认。（适用 DSH 0.2.2-rc.3 及以上）",
+    "detail": "docs/DETAIL.md"
+  }
+}
