@@ -1,5 +1,5 @@
 /**
- * @local/dsh-session-delete — Host half.
+ * dsh-session-delete — Host half.
  *
  * Registers one loopback HTTP route the Client half calls when the user
  * confirms a deletion. The route resolves the Session's directory under
@@ -7,7 +7,7 @@
  * directory, then drops the id from the Workspace registry (archive set,
  * workspace accounting, pins) and the projection cache.
  *
- * @module @local/dsh-session-delete
+ * @module dsh-session-delete
  */
 import { promises as fsp } from 'node:fs'
 import { homedir } from 'node:os'
@@ -16,7 +16,7 @@ import { dirname, join, resolve } from 'node:path'
 export const inject = ['webServer']
 
 /** Bundle version reported in every response, so a reload is observable. */
-export const PLUGIN_VERSION = '0.1.7'
+export const PLUGIN_VERSION = '0.1.8'
 
 /** Exact route path the Client half posts to. */
 export const ROUTE_PATH = '/dsh-session-delete/api'

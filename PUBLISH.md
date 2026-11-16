@@ -19,14 +19,9 @@
 
 依据：只在 DSH `0.2.2-rc.3`（桌面版）实测过，用到 `webServer.register`、`workspaceRegistry.archiveSession/detachSession`、`contextMenus`、`shell.overlay`。
 
-## 第 0 步：改包名（只有发 npm 才需要）
+## 包名
 
-现在叫 `@local/dsh-session-delete`，这是本地私有名，发不了 npm。发布前要：
-
-1. `package.json` 的 `name` 改成你在 npm 上拥有的名字，例如 `dsh-session-delete`；
-2. `client.js` 里 `id: '@local/dsh-session-delete'` 必须同步改成同一个名字（客户端模块 id 与包名一致）。
-
-走 GitHub 安装则**不需要**改名。
+包名是 `dsh-session-delete`，与 `client.js` 里的客户端模块 id 一致。发 npm 前确认这个名字在 npm 上可用。
 
 ## 路线 A：GitHub 仓库（推荐，不需要 npm 账号）
 

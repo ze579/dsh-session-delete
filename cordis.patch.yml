@@ -1,4 +1,4 @@
 # dsh-session-delete bundle patch: one Host row serving the delete route.
 - insert:
     - id: dsh-session-delete
-      name: '@local/dsh-session-delete'
+      name: 'dsh-session-delete'

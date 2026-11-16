@@ -1,5 +1,5 @@
 /**
- * @local/dsh-session-delete — Client half.
+ * dsh-session-delete — Client half.
  *
  * Adds "Delete session" to the Session context menu and asks twice before the
  * Host removes anything. The dialog is a local component: external plugins may
@@ -7,7 +7,7 @@
  * the shared Modal's structure and theme tokens.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-session-delete',
+  id: 'dsh-session-delete',
   factory(require) {
     const React = require('react')
     const h = React.createElement

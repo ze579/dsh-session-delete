@@ -21,7 +21,7 @@ await import('../client.js')
 
 test('the bundle registers one lazy factory under the package id', () => {
   assert.ok(loaded)
-  assert.equal(loaded.id, '@local/dsh-session-delete')
+  assert.equal(loaded.id, 'dsh-session-delete')
 })
 
 test('apply wires the session menu, the overlay, and the dictionaries', () => {
