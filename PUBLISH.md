@@ -85,3 +85,25 @@ node market/make-index.mjs --npm     # source 类型为 npm，索引里的版本
 - 以及（可选）awesome-dsh-plugin 的 PR（需要 GitHub 账号）。
 
 把仓库地址/ token 给我，或者你自己执行上面的命令——索引那一步的生成与校验我可以随时帮你跑。
+
+## 上架 awesome-dsh-plugin（dshmarket 的目录）
+
+该目录的数据源是 `data/plugins/<owner>__<repo>.yml`，一个插件一个文件。条目已经准备好：
+
+```
+market/awesome-dsh-plugin/ze579__dsh-session-delete.yml
+```
+
+提 PR 的步骤：
+
+1. 给仓库加 topic `dsh-plugin`（仓库首页 About 旁的齿轮 → Topics）；
+2. fork `awesome-dsh-plugin/awesome-dsh-plugin`；
+3. 在 fork 里新增 `data/plugins/ze579__dsh-session-delete.yml`，内容用上面那个文件；
+4. 向 main 开 PR，标题例如 `Add ze579/dsh-session-delete`。
+
+注意两条硬性要求：
+
+- **仓库创建需满 1 天**（CI 自动检查）。本仓库创建于 2026-11-16，所以最早 **2026-11-17** 再提 PR。
+- 图标要求是 GitHub 托管的**位图**（PNG/JPEG）。本包只有 `icon.svg`，所以条目里没有写 `icon`，会回退到作者头像；要自定义卡片图标，补一张 `assets/icon-180.png` 再把 `icon:` 加进条目。
+
+描述必须与代码一致（他们会对仓库核对），现在这版描述里提到的行为都能在 `index.js` / `client.js` 里找到对应实现。
